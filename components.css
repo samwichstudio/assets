@@ -30,8 +30,6 @@
     font-weight: 500!important;
     line-height: 2.2rem!important;
     text-align: center;
-    padding-top: 70px!important;
-    padding-bottom: 0px!important;
   }
   .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div:before {
     content: "FEATURED CONTENT";/*add hammer*/
@@ -79,7 +77,8 @@
     height: auto!important;
     margin-bottom: auto!important;
     margin-top: auto!important;
-    padding-top: 60px!important;
+    padding-top: 70px!important;
+    padding-bottom: 0px!important;
     padding-left: calc(120px + env(safe-area-inset-left))!important;/*outside boundary*/
     padding-right: calc(120px + env(safe-area-inset-left))!important;/*outside boundary*/
   }
