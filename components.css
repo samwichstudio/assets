@@ -23,15 +23,17 @@
     background: rgb(0,0,0,0);
   }
 /********** HERO GALLERY (Mod) **********
-  Note: Hero Gallery should be the 1st element with only one displayed item*/ 
+  Note: Hero Gallery should be the 1st/2nd element with only one displayed item*/ 
   /*Hero title font*/
-  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div { 
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div,
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div { 
     font-size: 1.8rem!important;
     font-weight: 500!important;
     line-height: 2.2rem!important;
     text-align: center;
   }
-  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div:before {
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div:before,
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div:before {
     content: "FEATURED CONTENT";/*add hammer*/
     font-size: 0.7rem;
     letter-spacing: 2px;
@@ -39,40 +41,50 @@
   }
   /*remove round corner*/
   .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a,
-  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div {
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div,
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a,
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div {
     border-radius: 0px!important;
   }
   /*hero height*/
-  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div {
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div,
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div {
   	padding-top: 500px; }
   .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),
-  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3) {
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3),
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3) {
     height: 500px;
     top: -500px;
     margin-bottom: -500px!important;
     border-radius: 0px!important;
   }
   /*gradient overlay*/
-  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) {
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) {
     background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
   }
   /*remove extra top margin*/
-  .notion-page-content > div:nth-child(1).notion-collection_view-block {
+  .notion-page-content > div:nth-child(1).notion-collection_view-block,
+  .notion-page-content > div:nth-child(2).notion-collection_view-block {
   margin-top: 0px!important;
   }
   /* hide gallery view buttons*/
-  .notion-page-content > div:nth-child(1).notion-collection_view-block > div:first-child {
+  .notion-page-content > div:nth-child(1).notion-collection_view-block > div:first-child,
+  .notion-page-content > div:nth-child(2).notion-collection_view-block > div:first-child {
     display: none!important;
   }
   /*adjust container margins outside boundary*/
-  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-collection_view-block > div > div {
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-collection_view-block > div > div,
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-collection_view-block > div > div {
     /*image box*/
     display: block!important;
     width: 100vw!important;
     padding-top: 0px!important;
     margin-left: calc(-96px + env(safe-area-inset-left))!important;/*outside boundary*/
   }
-  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div {
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div,
+  .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div {
     /*title box*/
     height: auto!important;
     margin-bottom: auto!important;
@@ -84,11 +96,13 @@
   }
   @media only screen and (max-width: 480px) {
     /*image box on mobile view*/
-    .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-collection_view-block > div > div {
+    .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-collection_view-block > div > div,
+    .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-collection_view-block > div > div {
       margin-left: calc(-24px + env(safe-area-inset-left))!important;
     }
     /*title box on mobile view*/
-    .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div {
+    .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div,
+    .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div {
       padding-left: calc(24px + env(safe-area-inset-left))!important;
       padding-right: calc(24px + env(safe-area-inset-left))!important;
     }
