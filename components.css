@@ -1,0 +1,149 @@
+/* GALLERY (box-style) */
+	/*gallery title box*/
+  .notion-gallery-view .notion-collection_view-block .notion-page-block > a > div > div:nth-child(2) > div {
+    width: 100%!important;
+    height: 100%!important;
+    padding: calc(1% + 15px)!important;
+    font-size: 1rem!important; /*font-Title(.css-fox54z)*/
+    font-weight: 500!important;
+    line-height: 1.2rem!important;
+    }
+  /*gallery image*/
+  .notion-gallery-view .notion-collection_view-block .notion-page-block > a > div > div:first-child > div > div {
+    padding-top: 350px;/*--box-height*/
+    /*--radius: see DATABASE fixes*/
+    }
+  /*format Title and Tag/date box*/
+  .notion-gallery-view .notion-collection_view-block .notion-page-block > a > div > div:nth-child(2),/*Title*/
+  .notion-gallery-view .notion-collection_view-block .notion-page-block > a > div > div:nth-child(3)/*Tag/date*/ {
+    position: relative;
+    height: 350px;/*--box-height*/
+    top: -350px;/*--box-height*/
+    margin-bottom: -350px!important;/*--box-height*/
+    border-radius: 12px;/*--radius*/
+    padding: 0px!important;
+    display: flex!important;
+    flex-direction: row!important;
+    color: white;
+    font-size: 0.5rem!important;/*font-Date*/
+    }
+  /*set background overlay on Title box*/
+  .notion-gallery-view .notion-collection_view-block .notion-page-block > a > div > div:nth-child(2) {
+    align-items: flex-end;
+    background: rgb(2,0,36,0.2);
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2) 85%, rgba(0,0,0,0.4) 100%);
+    }
+  /*format Tags*/
+  .notion-gallery-view .notion-collection_view-block .notion-page-block > a > div > div:nth-child(3) {
+    align-items: flex-end;
+    padding: calc(1% + 10px) calc(1% + 15px)!important;
+    }
+  .notion-gallery-view .notion-collection_view-block .notion-page-block > a > div > div:nth-child(3) > div {
+    margin: 0px!important;
+    padding-left: 0px!important;
+    padding-right: 10px!important;
+    }
+  .notion-gallery-view .notion-collection_view-block .notion-page-block > a > div > div:nth-child(3) > div > div > div {
+    background-color: rgb(0,0,0,0.3)!important;
+    border-radius: 4px!important;
+    padding-left: 6px!important;
+    padding-right: 6px!important;
+    padding-top: 8px!important;
+    padding-bottom: 9px!important;
+    color: white!important;
+    font-size: 0.6rem!important;/*font-Tag*/
+    }
+/* SPECIAL GALLERY (Mod)
+  Note: Special gallery should be inside a SYNCED BLOCK and 
+  only have 1 visible property: URL REDIRECT*/
+  .notion-transclusion_container-block .notion-collection_view-block .notion-page-block > a > div > div > div > a {
+    width: 100%!important;/*featured redirect*/
+    height: 100%!important;
+  }
+  /*hide gallery tab/title*/.notion-transclusion_container-block > .notion-collection_view-block > div:first-child,
+  /*hide property*/.notion-transclusion_container-block .notion-collection_view-block .notion-page-block > a > div > div > div > a > div {
+    display: none!important;
+  }
+  /*adjust box-height*/
+  .notion-transclusion_container-block .notion-collection_view-block .notion-page-block > a > div > div:first-child .css-9a9znp {
+    padding-top: 200px; }
+  .notion-transclusion_container-block .notion-collection_view-block .notion-page-block > a > div > div:nth-child(2),/*Title*/
+  .notion-transclusion_container-block .notion-collection_view-block .notion-page-block > a > div > div:nth-child(3)/*Tag/date*/ {
+    height: 200px;
+    top: -200px;
+    margin-bottom: -200px!important;
+   }
+  /*remove gradient overlay*/
+  .notion-transclusion_container-block .notion-collection_view-block .notion-page-block > a > div > div:nth-child(2) {
+    background: rgb(0,0,0,0);
+  }
+/* HERO GALLERY (Mod) 
+  Note: Hero Gallery should be the first element with only one displayed item*/ 
+	/*Hero title font*/
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div { 
+    font-size: 1.8rem!important;
+    font-weight: 500!important;
+    line-height: 2.2rem!important;
+    text-align: center;
+  }
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div:before {
+    content: "FEATURED CONTENT";/*add hammer*/
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    display: block;
+  }
+  /*remove round corner*/
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a,
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div {
+    border-radius: 0px!important;
+  }
+  /*hero height*/
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div {
+  	padding-top: 500px; }
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3) {
+    height: 500px;
+    top: -500px;
+    margin-bottom: -500px!important;
+    border-radius: 0px!important;
+  }
+  /*gradient overlay*/
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) {
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+  }
+  /*remove extra top margin*/
+  .notion-page-content > div:nth-child(1).notion-collection_view-block {
+  margin-top: 0px!important;
+  }
+  /* hide gallery view buttons*/
+  .notion-page-content > div:nth-child(1).notion-collection_view-block > div:first-child {
+    display: none!important;
+  }
+  /*adjust container margins outside boundary*/
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-collection_view-block > div > div {
+    /*image box*/
+    display: block!important;
+    width: 100vw!important;
+    padding-top: 0px!important;
+    margin-left: calc(-96px + env(safe-area-inset-left))!important;/*outside boundary*/
+  }
+  .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div {
+    /*title box*/
+    height: auto!important;
+    margin-bottom: auto!important;
+    margin-top: auto!important;
+    padding-top: 60px!important;
+    padding-left: calc(120px + env(safe-area-inset-left))!important;/*outside boundary*/
+    padding-right: calc(120px + env(safe-area-inset-left))!important;/*outside boundary*/
+  }
+  @media only screen and (max-width: 480px) {
+    /*image box on mobile view*/
+    .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-collection_view-block > div > div {
+      margin-left: calc(-24px + env(safe-area-inset-left))!important;
+    }
+    /*title box on mobile view*/
+    .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div {
+      padding-left: calc(24px + env(safe-area-inset-left))!important;
+      padding-right: calc(24px + env(safe-area-inset-left))!important;
+    }
+  }
