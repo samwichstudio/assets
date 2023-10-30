@@ -1,5 +1,5 @@
 /********** 2nd-LEVEL NAVBAR (1st block: Synced Block > Callout) **********
-  Note: The first block shoudl be a <Callout> inside a <Synced Block>
+  Note: The first block should be a <Callout> inside a <Synced Block>
   /*remove residual top page margin*/
   .notion-page-content > div:nth-child(1).css-937kam {/*(.notion-transclusion_reference-block and .notion-transclusion_container-block)*/
     margin: 0px!important;
