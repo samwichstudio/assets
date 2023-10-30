@@ -52,6 +52,59 @@
     margin: auto 0px!important;
   }
 
+/********** FULL-PAGE HERO BANNER (2nd block: Synced Block > Callout(2)] **********
+  Note: The 2nd block should be 2 <Callouts> inside a <Synced Block>*/
+  /*full-page image container (1st Callout)*/
+  .notion-page-content > div:nth-child(2).notion-transclusion_container-block > .notion-callout-block:nth-child(1) {
+    position: absolute;
+    border: 0px!important;
+    border-radius: 0px!important;
+    top: 0px;
+    left: 0px;
+    min-height: 700px;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw!important;
+    margin: 0px!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    z-index: -1;
+  }
+  .notion-page-content > div:nth-child(2).notion-transclusion_container-block > .notion-callout-block:nth-child(1) > div {
+  	display: none!important;/*remove not needed div*/
+  }
+  /*text-content container (2nd Callout)*/
+  .notion-page-content > div:nth-child(2).notion-transclusion_container-block > .notion-callout-block:nth-child(2) > div > div {
+    background-color: rgb(0,0,0,0)!important;
+    text-align: center;
+    max-width: 900px;
+  }
+  .notion-page-content > div:nth-child(2).notion-transclusion_container-block > .notion-callout-block:nth-child(2) .notion-image-block {
+      margin: 0 auto;/*text-content image*/
+  }
+  .notion-page-content > div:nth-child(2).notion-transclusion_container-block > .notion-callout-block:nth-child(2) {
+    height: calc(100vh - 1px);
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    padding-top: 100px!important;
+    overflow: hidden;
+    margin: 0px!important;
+  }
+  .notion-page-content > div:nth-child(2).notion-transclusion_container-block > .notion-callout-block:nth-child(2) span[style*="rgb(155, 154, 151)"] {
+  	color: white!important;
+  }
+  @media only screen and (max-height: 500px) {
+    .notion-page-content > div:nth-child(2).notion-transclusion_container-block > .notion-callout-block:nth-child(2) {
+      font-size: 0.8rem!important; }
+    .notion-page-content > div:nth-child(2).notion-transclusion_container-block > .notion-callout-block:nth-child(2) img {
+      display:none; 
+    }
+  }
+
 /********** SPECIAL GALLERY (Mod) **********
   Note: Special gallery should be inside a SYNCED BLOCK and 
   only have 1 visible property: URL REDIRECT*/
