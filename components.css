@@ -62,7 +62,8 @@
   }
 
 /********** FULL-PAGE HERO BANNER (2nd block: Synced Block > Callout(2)] **********
-  Note: The 2nd block should be 2 <Callouts> inside a <Synced Block>*/
+  Note: The 2nd block should be 2 <Callouts> inside a <Synced Block>
+  FOR PAGES ONLY (NOT FOR DATABASE-ENTRY PAGES)*/
   /*full-page image container (1st Callout)*/
   .notion-page-content > div:nth-child(2).notion-transclusion_container-block > .notion-callout-block:nth-child(1) {
     position: absolute;
@@ -117,25 +118,32 @@
 /********** SPECIAL GALLERY (Mod) **********
   Note: Special gallery should be inside a SYNCED BLOCK and 
   only have 1 visible property: URL REDIRECT*/
-  .notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div > div > a {
+  .notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div > div > a,
+  .notion-transclusion_reference-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div > div > a {
     width: 100%!important;/*featured redirect*/
     height: 100%!important;
   }
   /*hide gallery tab/title*/.notion-transclusion_container-block > .notion-collection_view-block > div:first-child,
-  /*hide property*/.notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div > div > a > div {
+  /*hide property*/.notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div > div > a > div,
+  /*hide gallery tab/title*/.notion-transclusion_reference-block > .notion-collection_view-block > div:first-child,
+  /*hide property*/.notion-transclusion_reference-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div > div > a > div {
     display: none!important;
   }
   /*adjust box-height*/
-  .notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child .css-9a9znp {
+  .notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child .css-9a9znp,
+  .notion-transclusion_reference-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child .css-9a9znp {
     padding-top: 200px; }
   .notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),/*Title*/
-  .notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3)/*Tag/date*/ {
+  .notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3),/*Tag/date*/
+  .notion-transclusion_reference-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),/*Title*/
+  .notion-transclusion_reference-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3)/*Tag/date*/ {
     height: 200px;
     top: -200px;
     margin-bottom: -200px!important;
    }
   /*remove gradient overlay*/
-  .notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) {
+  .notion-transclusion_container-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),
+  .notion-transclusion_reference-block .notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) {
     background: rgb(0,0,0,0);
   }
 
