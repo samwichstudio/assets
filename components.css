@@ -232,3 +232,12 @@
       padding-right: calc(24px + env(safe-area-inset-left))!important;
     }
   }
+
+/********** CENTER-ALIGNED HEADER TEXT **********
+  Note: H1,H2,H3 with the whole block having Gray Background-color will be centered*/
+  .notion-sub_sub_header-block > div[style="background-color: rgb(241, 241, 239);"],
+  .notion-sub_header-block > div[style="background-color: rgb(241, 241, 239);"],
+	.notion-header-block > div[style="background-color: rgb(241, 241, 239);"] {
+    background-color: transparent!important;
+    text-align: center;
+  }
