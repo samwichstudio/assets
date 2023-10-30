@@ -1,4 +1,4 @@
-/* SPECIAL GALLERY (Mod)
+/********** SPECIAL GALLERY (Mod) **********
   Note: Special gallery should be inside a SYNCED BLOCK and 
   only have 1 visible property: URL REDIRECT*/
   .notion-transclusion_container-block .notion-collection_view-block .notion-page-block > a > div > div > div > a {
@@ -22,9 +22,9 @@
   .notion-transclusion_container-block .notion-collection_view-block .notion-page-block > a > div > div:nth-child(2) {
     background: rgb(0,0,0,0);
   }
-/* HERO GALLERY (Mod) 
-  Note: Hero Gallery should be the first element with only one displayed item*/ 
-	/*Hero title font*/
+/********** HERO GALLERY (Mod) **********
+  Note: Hero Gallery should be the 2nd element with only one displayed item*/ 
+  /*Hero title font*/
   .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div { 
     font-size: 1.8rem!important;
     font-weight: 500!important;
