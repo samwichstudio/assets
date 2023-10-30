@@ -30,6 +30,7 @@
     font-weight: 500!important;
     line-height: 2.2rem!important;
     text-align: center;
+    padding-top: 70px!important;
     padding-bottom: 0px!important;
   }
   .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2) > div:before {
