@@ -1,13 +1,11 @@
 /********** 2nd-LEVEL NAVBAR (1st block: Synced Block > Callout) **********
   Note: The first block should be a <Callout> inside a <Synced Block>
-  /*remove residual top page margin*/
-  .notion-page-content > div:nth-child(1).notion-transclusion_reference-block, 
-  .notion-page-content > div:nth-child(1).notion-transclusion_container-block { /*(.css-937kam)*/
+  /*remove residual top page margin*/ 
+  .notion-page-content > div:nth-child(1) { /*(.css-937kam)*/
     margin: 0px!important;
   }
   /*color + position*/
-  .notion-page-content > div:nth-child(1).notion-transclusion_reference-block > .notion-callout-block,
-  .notion-page-content > div:nth-child(1).notion-transclusion_container-block > .notion-callout-block {
+  .notion-page-content > div:nth-child(1) > .notion-callout-block {
     position: fixed;
     margin: 0px;
     top: 45px;
@@ -24,38 +22,31 @@
     color: white!important;
   }
   /*navbar container*/
-  .notion-page-content > div:nth-child(1).notion-transclusion_reference-block > .notion-callout-block > div > div,
-  .notion-page-content > div:nth-child(1).notion-transclusion_container-block > .notion-callout-block > div > div {
+  .notion-page-content > div:nth-child(1) > .notion-callout-block > div > div {
     padding: 16px 16px!important;
     background-color: rgb(0,0,0,0)!important;
   }
   /*navbar inside-content container*/
-  .notion-page-content > div:nth-child(1).notion-transclusion_reference-block > .notion-callout-block > div > div > div:nth-child(2),
-  .notion-page-content > div:nth-child(1).notion-transclusion_container-block > .notion-callout-block > div > div > div:nth-child(2) {
+  .notion-page-content > div:nth-child(1) > .notion-callout-block > div > div > div:nth-child(2) {
     margin-left: 3px!important;/*<navbar content> adjustment for logo alignment to top-navbar*/
     flex-direction: row;
     overflow: visible;
   }
   /*hide callout block title*/
-  .notion-page-content > div:nth-child(1).notion-transclusion_reference-block > .notion-callout-block > div > div > div:nth-child(2) > div:nth-child(1),
-  .notion-page-content > div:nth-child(1).notion-transclusion_container-block > .notion-callout-block > div > div > div:nth-child(2) > div:nth-child(1) {
+  .notion-page-content > div:nth-child(1) > .notion-callout-block > div > div > div:nth-child(2) > div:nth-child(1) {
     display: none!important; 
   }
   /*logo image (.notion-image-block)*/
-  .notion-page-content > div:nth-child(1).notion-transclusion_reference-block > .notion-callout-block img, 
-  .notion-page-content > div:nth-child(1).notion-transclusion_container-block > .notion-callout-block img {
+  .notion-page-content > div:nth-child(1) > .notion-callout-block img {
     border-radius: 0px!important;}/*(IMG)remove round corners from logo*/
-  .notion-page-content > div:nth-child(1).notion-transclusion_reference-block > .notion-callout-block > div > div > div:nth-child(2) .notion-image-block,
-  .notion-page-content > div:nth-child(1).notion-transclusion_container-block > .notion-callout-block > div > div > div:nth-child(2) .notion-image-block {
+  .notion-page-content > div:nth-child(1) > .notion-callout-block > div > div > div:nth-child(2) .notion-image-block {
     align-self: center;
     margin: 0 auto 0 0!important;
   }
   /*text items (.notion-text-block)*/
-  .notion-page-content > div:nth-child(1).notion-transclusion_reference-block > .notion-callout-block > div > div > div:nth-child(2) .notion-text-block:not(:first-child), 
-  .notion-page-content > div:nth-child(1).notion-transclusion_container-block > .notion-callout-block > div > div > div:nth-child(2) .notion-text-block:not(:first-child) {
+  .notion-page-content > div:nth-child(1) > .notion-callout-block > div > div > div:nth-child(2) .notion-text-block:not(:first-child) {
   	margin-left: 20px!important; }/*all not-first-child items*/
-  .notion-page-content > div:nth-child(1).notion-transclusion_reference-block > .notion-callout-block > div > div > div:nth-child(2) .notion-text-block,
-  .notion-page-content > div:nth-child(1).notion-transclusion_container-block > .notion-callout-block > div > div > div:nth-child(2) .notion-text-block {
+  .notion-page-content > div:nth-child(1) > .notion-callout-block > div > div > div:nth-child(2) .notion-text-block {
     max-width: auto!important;
     width: auto!important;
     margin: auto 0px!important;
