@@ -165,14 +165,14 @@
   /*hero height*/
   .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div,
   .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child > div > div {
-  	padding-top: 80vh; }
+  	padding-top: 100vh; }
   .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),
   .notion-page-content > div:nth-child(1).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3),
   .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),
   .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3) {
-    height: 80vh;
-    top: -80vh;
-    margin-bottom: -80vh!important;
+    height: 100vh;
+    top: -100vh;
+    margin-bottom: -100vh!important;
     border-radius: 0px!important;
   }
   /*gradient overlay*/
