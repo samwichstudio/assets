@@ -223,6 +223,18 @@
       padding-right: calc(24px + env(safe-area-inset-left))!important;
     }
   }
+  /*bigger hero gallery on mobile*/
+  @media only screen and (max-width: 727px) {
+    .page-samtadeos .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:first-child .css-9a9znp {
+      padding-top: 100vh;
+    }
+    .page-samtadeos .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(2),
+    .page-samtadeos .notion-page-content > div:nth-child(2).notion-collection_view-block .notion-gallery-view .notion-page-block > a > div > div:nth-child(3) {
+      height: 100vh;
+      top: -100vh;
+      margin-bottom: -100vh!important;
+    }
+  }
 
 /********** CENTER-ALIGNED HEADER TEXT **********
   Note: H1,H2,H3 with the whole block having Gray Background-color will be centered*/
